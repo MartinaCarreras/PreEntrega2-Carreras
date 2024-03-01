@@ -1,0 +1,13 @@
+.containerNav {
+    display: flex;
+    width: 100vw;
+    height: 120px;
+    align-items: center;
+    background-color: darkolivegreen;
+    justify-content: space-evenly;
+}
+.ul {
+    display: flex;
+    width: 70%;
+    justify-content: space-between;
+}

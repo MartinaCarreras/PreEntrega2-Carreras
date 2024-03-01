@@ -1,0 +1,9 @@
+.img {
+    height: 200px;
+}
+.card {
+    border: 1;
+    width: fit-content;
+    margin: 10px;
+}
+
