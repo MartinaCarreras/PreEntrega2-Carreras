@@ -1,13 +1,38 @@
 .containerNav {
-    display: flex;
-    width: 100vw;
-    height: 120px;
-    align-items: center;
-    background-color: darkolivegreen;
-    justify-content: space-evenly;
-}
-.ul {
-    display: flex;
-    width: 70%;
+    background-color: #65743A;
+    height: 160px;
+    border-left: #3F4924 2.37212750185vw solid;
+    border-right: #3F4924 2.37212750185vw solid;
+    border-bottom: #65743A 1px solid;
+    position: sticky;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 3;
+    display: flex !important;
+    flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    font-size: 25px !important;
+    list-style: none;
+    margin: 0;
+}
+.botones {
+    transform: scale(1, 1);
+    transition: all 0.3s;
+    color: #C6C5B9;
+    text-decoration: none;
+}
+.botones:hover {
+    transform: scale(1.1, 1.1);
+  }
+.header_logo {
+    height: 130px;
+    animation-duration: 1.5s;
+    animation-name: logo-header;
+    animation-iteration-count: infinite;
+    animation-delay: 0s;
 }

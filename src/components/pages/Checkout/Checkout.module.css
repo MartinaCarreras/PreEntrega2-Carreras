@@ -1,0 +1,24 @@
+.form div div input {
+    border: #79786f 1.5px solid;
+    background-color: #C6C5B9;
+    transform: scale(1, 1);
+    transition: all 0.3s;
+}
+.form div div input:hover {
+    transform: scale(1.05, 1.05);
+}
+#send {
+    color: #4b4a43;
+    border: #79786f 1.5px solid;
+    background-color: #C6C5B9;
+    transform: scale(1, 1);
+    transition: all 0.3s;
+    margin-top: 10px;
+}
+#send:hover {
+    transform: scale(1.05, 1.05);
+}
+#bordes {
+    margin: 0 10px 0 10px;
+    padding: 10px 0 10px 0;
+}

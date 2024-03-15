@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
-import { ItemList } from '../common';
-import {getProducts} from "../../asyncMock"
+import { ItemList, Loading } from '../../common';
+import {getProducts} from "../../../asyncMock"
 import { useParams } from 'react-router-dom';
 
 export const ItemListContainer = () => {
@@ -22,7 +22,7 @@ export const ItemListContainer = () => {
     }, [category])
   return (
     <>
-      {isLoading ? <h2>Cargando...</h2> : <ItemList products={products}/>}
+      {isLoading ? <Loading/> : <ItemList products={products}/>}
     </>
   );
 }

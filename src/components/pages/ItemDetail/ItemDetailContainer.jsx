@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react'
-import { ItemDetail } from '../common/'
+import { ItemDetail, Loading } from '../../common'
 import { useParams } from 'react-router-dom';
-import { getProduct } from '../../asyncMock';
+import { getProduct } from '../../../asyncMock';
 
 export const ItemDetailContainer = () => {
     const { id } = useParams ();
@@ -15,10 +15,17 @@ export const ItemDetailContainer = () => {
             setIsLoading(false);
           })
       }, [])
+    const onAdd = (quantity)=>{
+      const producto = {
+        ...item,
+        cantidad: quantity
+      }
+      console.log(producto);
+    }
       
   return (
     <>
-    {isLoading ? <h1>Cargando...</h1> : <ItemDetail {...item} />}
+    {isLoading ? <Loading/> : <ItemDetail {...item} onAdd={onAdd} />}
     </>
     )
 }

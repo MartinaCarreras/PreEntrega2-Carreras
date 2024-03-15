@@ -1,9 +1,29 @@
-.img {
-    height: 200px;
-}
 .card {
-    border: 1;
-    width: fit-content;
-    margin: 10px;
+    margin: 20px 0.9615384615vw 20px 0.9615384615vw;
+    padding-bottom: 15px;
+    background-color: #A9A89A;
+    width: 21.1538461538vw;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    transform: scale(1, 1);
+    transition: all 0.3s;
+    border-radius: 10px;
 }
+.card h3 {
+    font-size: 25px;
+    margin-bottom: 0;
+
+}
+.button {
+    background-color: #7c7c74;
+    border: none;
+    padding: 5px 10px 5px 10px;
+    border-radius: 5px;
+}
+.productos_section_producto {
+    width: 90.9090909091%;
+    margin: 4.5454545455%;
+    border-radius: 10px;
+  }
 

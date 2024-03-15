@@ -4,24 +4,25 @@ import style from "./NavBar.module.css";
 
 export const NavBar = () => {
   return (
-    <div>
-      <div className={style.containerNav}>
+    <header>
+      <ul className={style.containerNav}>
         <Link to={"/"}>
-          <img src="https://i.imgur.com/DjsgGIx.jpg" alt="Logo" style={{width: "150px", height: "100px"}}/>        </Link>
+          <img src="https://i.imgur.com/DjsgGIx.jpg" alt="Logo" className={style.header_logo}/>
+        </Link>
         <Link to={"/category/Ropa"}>
-          <button>Ropa</button>
+          <li className={style.botones}>Ropa</li>
         </Link>
         <Link to={"/category/Peluches"}>
-          <button>Peluches</button>
+          <li className={style.botones}>Peluches</li>
         </Link>
         <Link to={"/category/Accesorios"}>
-          <button>Accesorios</button>
+          <li className={style.botones}>Accesorios</li>
         </Link>
         <Link to="/cart">
           <CartWidget/>
         </Link>
-      </div>
-    </div>
+      </ul>
+    </header>
   )
 }
 
