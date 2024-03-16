@@ -1,11 +1,12 @@
 .form div div input {
+    margin: 5px 0 5px 0;
     border: #79786f 1.5px solid;
     background-color: #C6C5B9;
     transform: scale(1, 1);
     transition: all 0.3s;
 }
 .form div div input:hover {
-    transform: scale(1.05, 1.05);
+    transform: scale(1.03, 1.03);
 }
 #send {
     color: #4b4a43;

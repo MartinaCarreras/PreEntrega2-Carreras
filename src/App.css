@@ -10,4 +10,5 @@ main {
     background-color: #C6C5B9;
     border-left: #A9A89A 2.3721275019vw solid;
     border-right: #A9A89A 2.3721275019vw solid;
+    min-height: 60vh;
 }

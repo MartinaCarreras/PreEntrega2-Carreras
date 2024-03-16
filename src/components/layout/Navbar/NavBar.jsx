@@ -1,4 +1,4 @@
-import { CartWidget } from "../../common/CartWidget";
+import { CartWidget } from "../../common/index";
 import { Link } from 'react-router-dom'
 import style from "./NavBar.module.css";
 
@@ -18,9 +18,7 @@ export const NavBar = () => {
         <Link to={"/category/Accesorios"}>
           <li className={style.botones}>Accesorios</li>
         </Link>
-        <Link to="/cart">
-          <CartWidget/>
-        </Link>
+        <CartWidget/>
       </ul>
     </header>
   )
