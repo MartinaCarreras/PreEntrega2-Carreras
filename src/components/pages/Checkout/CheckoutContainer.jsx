@@ -10,7 +10,6 @@ export const CheckoutContainer = () => {
 
     const sendForm = ( event ) => {
       event.preventDefault();
-      console.log(infoUser);
     }
 
     const change = (event) => {

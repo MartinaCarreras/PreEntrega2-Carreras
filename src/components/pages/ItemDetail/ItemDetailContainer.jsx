@@ -1,31 +1,38 @@
-import { useEffect, useState } from 'react'
-import { ItemDetail, Loading } from '../../common'
+import { useContext, useEffect, useState } from 'react'
+import { Loading } from '../../common'
+import { ItemDetail } from './ItemDetail';
 import { useParams } from 'react-router-dom';
 import { getProduct } from '../../../asyncMock';
+import { CartContext } from '../../../context/CartContext';
 
 export const ItemDetailContainer = () => {
     const { id } = useParams ();
+    const { addToCart, totalQuantity } = useContext (CartContext);
     const [item, setItem] = useState (null);
     const [isLoading, setIsLoading] = useState (true);
-      useEffect (() => {
-        setIsLoading(true);
-        getProduct(id)
-          .then (resp => {
-            setItem(resp);
-            setIsLoading(false);
-          })
-      }, [])
+    
+    const total = totalQuantity(+id);
+
     const onAdd = (quantity)=>{
       const producto = {
         ...item,
-        cantidad: quantity
+        quantity: quantity
       }
-      console.log(producto);
+      addToCart( producto );
     }
-      
+
+    useEffect (() => {
+      setIsLoading(true);
+      getProduct(id)
+        .then (resp => {
+          setItem(resp);
+          setIsLoading(false);
+        })
+    }, [])
+
   return (
     <>
-    {isLoading ? <Loading/> : <ItemDetail {...item} onAdd={onAdd} />}
+    {isLoading ? <Loading/> : <ItemDetail {...item} onAdd={onAdd} total={total}/>}
     </>
     )
 }

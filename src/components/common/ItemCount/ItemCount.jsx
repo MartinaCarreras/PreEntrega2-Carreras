@@ -1,15 +1,15 @@
 import { useState } from "react";
 import style from './ItemCount.module.css'
 
-export const ItemCount = ({stock, inicial = 1, onAdd}) => {
-  const [count, setCount] = useState(inicial);
+export const ItemCount = ({ stock, onAdd, total=1 }) => {
+  const [count, setCount] = useState(total);
 
   const increment = () => {
     count < stock && setCount(count + 1);
   }
   
   const decrement = () => {
-    count > 0 && setCount(count - 1);
+    count > 1 && setCount(count - 1);
   }
   return (
     <div>

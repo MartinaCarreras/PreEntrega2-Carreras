@@ -15,7 +15,7 @@ export const getProducts = () => {
         if (productos.length > 0) {
             setTimeout(() => {
                 resolve (productos);
-            }, 2000);
+            }, 1000);
         }else {
             reject ("No hay productos");
         }
@@ -32,7 +32,7 @@ export const getProduct = (id) => {
                 }else {
                     reject("No existe este producto");
                 }
-            }, 2000);
+            }, 1000);
         }else {
             reject ("No hay productos")
         }

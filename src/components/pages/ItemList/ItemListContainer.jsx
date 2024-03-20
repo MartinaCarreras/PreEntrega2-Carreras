@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react'
-import { ItemList, Loading } from '../../common';
+import { Loading } from '../../common';
+import { ItemList } from "./ItemList"
 import {getProducts} from "../../../asyncMock"
 import { useParams } from 'react-router-dom';
 

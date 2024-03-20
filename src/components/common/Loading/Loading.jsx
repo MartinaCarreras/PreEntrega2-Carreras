@@ -1,10 +1,11 @@
 import style from "./Loading.module.css"
+import { PulseLoader } from "react-spinners"
 
 export const Loading = () => {
   return (
     <div className={style.fondo}>
         <h3>Cargando...</h3>
-        <img className={style.img} src="https://i.imgur.com/wccjdP8.gif" alt="" />
+        <PulseLoader color="#A9A89A"  size={42}/>
     </div>
   )
 }
