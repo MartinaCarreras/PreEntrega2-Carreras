@@ -1,13 +1,11 @@
-const productos = [
-    {id:1, name: "Peluche de Vaquita", img: "https://imgur.com/XhfkkTS.jpeg", price: 4000, description: "Un peluche de una vaquita", category: "Peluches", stock: 5},
-    {id:2, name: "Peluche de pulpo", img: "https://i.imgur.com/qCxG6Go.jpeg", price: 1500, description: "Un peluche de un pulpito de 7 cm", category: "Peluches", stock: 7},
-    {id:3, name: "Top verde", img: "https://i.imgur.com/hD9tij0.jpeg", price: 6000, description: "Una pupera verde", category: "Ropa", stock: 4},
-    {id:4, name: "Cardigan de parches", img: "https://i.imgur.com/3H9549L.jpeg", price: 15000, description: "Un cardigan hecho enteramente con granny squares", category: "Ropa", stock: 2},
-    {id:5, name: "Monedero", img: "https://imgur.com/JyJ7I1S.jpeg", price: 1200, description: "Un monedero de flor para guardar todas tus monedas", category: "Accesorios", stock: 15},
-    {id:6, name: "Peluche de Manzana", img: "https://imgur.com/IjDZCPI.jpeg", price: 1800, description: "¡Un peluche de manzana para que te acompañe a todos lados!", category: "Peluches", stock: 9},
-    {id:7, name: "Peluche de Alicia", img: "https://imgur.com/yC1QNPf.jpeg", price: 5000, description: "¡Un peluche de Alicia en el País de las Maravillas!", category: "Peluches", stock: 3},
-    {id:8, name: "Peluche de ranita", img: "https://imgur.com/aPIceQC.jpeg", price: 2000, description: "¡Un peluche de una ranita!", category: "Peluches", stock: 5},
-    {id:9, name: "Peluche de lechuza", img: "https://imgur.com/kERTdqv.jpeg", price: 2000, description: "¡Un peluche de una lechuza!", category: "Peluches", stock: 7},
+export const productos = [
+    {name: "Peluche de pulpo", img: "https://i.imgur.com/qCxG6Go.jpeg", price: 1500, description: "Explora el encanto del océano con nuestro peluche de pulpo tejido a mano. Una adición encantadora y llena de personalidad para cualquier colección.", category: "Peluches", stock: 7},
+    {name: "Cardigan de parches", img: "https://i.imgur.com/3H9549L.jpeg", price: 15000, description: "Viste con elegancia y creatividad con nuestro cardigan de granny squares tejido con esmero. Un símbolo de estilo y calidez, perfecto para cualquier ocasión.", category: "Ropa", stock: 2},
+    {name: "Monedero", img: "https://imgur.com/JyJ7I1S.jpeg", price: 1200, description: "Lleva la moda en tus manos con nuestro monedero tejido a crochet. Práctico, elegante y único, el complemento perfecto para tus aventuras diarias.", category: "Accesorios", stock: 15},
+    {name: "Peluche de Manzana", img: "https://imgur.com/IjDZCPI.jpeg", price: 1800, description: "Descubre la dulzura de la naturaleza con nuestro peluche de manzana tejido a crochet. Un regalo encantador y juguetón que hará brillar cualquier día.", category: "Peluches", stock: 9},
+    {name: "Peluche de Alicia", img: "https://imgur.com/yC1QNPf.jpeg", price: 5000, description: "Embárcate en un viaje mágico con nuestro peluche de Alicia en el País de las Maravillas. Una compañera encantadora que te llevará a aventuras inolvidables.", category: "Peluches", stock: 3},
+    {name: "Peluche de ranita", img: "https://imgur.com/aPIceQC.jpeg", price: 2000, description: "Salta a la diversión con nuestro adorable peluche de ranita. Con detalles encantadores y suavidad inigualable, es el compañero perfecto para aventuras ilimitadas.", category: "Peluches", stock: 5},
+    {name: "Peluche de lechuza", img: "https://imgur.com/kERTdqv.jpeg", price: 2000, description: "Descubre la sabiduría y la ternura con nuestro peluche de lechuza. Con sus ojos brillantes y su suavidad, es el compañero perfecto para acompañarte en tus aventuras nocturnas.", category: "Peluches", stock: 7},
 ]
 
 export const getProducts = () => {

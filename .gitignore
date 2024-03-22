@@ -22,3 +22,6 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Ignorando el archivo con los datos de firebase
+firebaseConfig.js

@@ -3,7 +3,7 @@ import { createContext, useState } from "react"
 export const CartContext = createContext();
 
 const CartContextProvider = ( {children} ) => {
-    const [cart, setCart] = useState([]);
+    const [cart, setCart] = useState( JSON.parse(localStorage.getItem( "cart" )) || [] );
 
     const addToCart = ( elemento ) => {
       const isItIn = isIn( elemento.id );
@@ -17,14 +17,17 @@ const CartContextProvider = ( {children} ) => {
           }
         } )
         setCart(ProductoDuplicado)
+        localStorage.setItem("cart", JSON.stringify( ProductoDuplicado ))
       }else {
         setCart ([ ...cart, elemento ]);
+        localStorage.setItem("cart", JSON.stringify([ ...cart, elemento ]))
       }
-
+      
     }
 
     const clearCart = () => {
       setCart ([]);
+      localStorage.removeItem( "cart" )
     }
 
     const setQuantity = (id, type) => {
@@ -53,7 +56,8 @@ const CartContextProvider = ( {children} ) => {
 
       let newArray = cart.filter( (product) => product.id !== id )
       setCart(newArray)
-
+      
+      localStorage.setItem("cart", JSON.stringify( newArray ))
     }
 
     const totalItems = () => {

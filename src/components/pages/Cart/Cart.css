@@ -3,29 +3,66 @@
 }
 
 .div {
-    width: 50%;
+    width: 60%;
     padding: 10px;
     border-radius: 15px;
 }
 
 .div2 {
+    width: 40%;
     margin: 20px 5px 20px 5px;
     padding: 10px;
     background-color: #A9A89A;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 70vh;
+}
+
+.div2 div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
 }
 
 .tarjeta {
     display: flex;
-    /* border-left: #A9A89A 2.3721275019vw solid; */
     background-color: #A9A89A;
+    justify-content: space-between;
     margin: 10px;
     padding: 5px;
     width: 100%;
     flex-wrap: wrap;
     border-radius: 15px;
+}
 
+.tarjeta h5 {
+    width: 50%;
+}
+
+.tarjeta div {
+    width: 30px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.tarjeta div h4 {
+    padding-top: 5px;
+}
+
+.button1 {
+    border: none;
+    border-radius: 5px;
+    background-color: #838278;
+    height: fit-content;
+}
+
+.button {
+    padding: 5px;
+    align-self: center;
 }
 
 .img {
-    width: 25vw;
+    height: 90px;
 }
