@@ -11,6 +11,8 @@ export const ItemListContainer = () => {
     const [isLoading, setLoading] = useState([true]);
 
     useEffect(() => {
+
+      setLoading(true);
       
       let productsColection = collection( db, "productos" )
       let consulta = productsColection;
@@ -26,11 +28,6 @@ export const ItemListContainer = () => {
           })
           setProducts(arrayDocs);
         }).finally(() => setLoading(false));
-
-
-
-
-
 
     }, [category])
 

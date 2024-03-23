@@ -1,8 +1,9 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom"
-import { ItemDetailContainer, ItemListContainer, CartContainer, Error, CheckoutContainer } from "./components/pages/index"
+import { ItemDetailContainer, ItemListContainer, CartContainer, Error, CheckoutContainer } from "./components/pages/"
 import './App.css'
 import { Layout } from "./components/layout/index"
 import CartContextProvider from "./context/CartContext"
+import { routes } from "./routes/routes"
 
 const App = () => {
   return (
@@ -11,12 +12,9 @@ const App = () => {
         <CartContextProvider>
           <Routes>
             <Route element={<Layout/>}>
-              <Route path="/" element={<ItemListContainer/>} />
-              <Route path="/category/:category" element={<ItemListContainer/>} />
-              <Route path="/cart" element={<CartContainer/>}/>
-              <Route path="/checkout" element={<CheckoutContainer/>}/>
-              <Route path="/product/:id" element={<ItemDetailContainer/>} />
-              <Route path="*" element={<Error/>}/>
+              {routes.map(({id, path, Element})=>{
+                return <Route path={path} element={<Element/>} key={id} />
+              })}
             </Route>
           </Routes>
         </CartContextProvider>
