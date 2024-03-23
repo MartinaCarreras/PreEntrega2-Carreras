@@ -1,8 +1,13 @@
-# React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# Tienda Peluchitos
+#### Tienda de peluches.
+#### Puedes comprar y nos contactaremos contigo por mail para darte instrucciones de compra.
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Para que la página funcione necesitas
+- VITE_API_KEY
+- VITE_AUTH_DOMAIN
+- VITE_PROJECT_ID
+- VITE_STORAGE_BUCKET
+- VITE_MESSAGING_SENDER_ID
+- VITE_APP_ID
