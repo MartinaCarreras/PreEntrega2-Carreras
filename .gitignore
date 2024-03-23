@@ -24,5 +24,4 @@ dist-ssr
 *.sw?
 
 # Ignorando el archivo con los datos de firebase
-firebaseConfig.js
 .env
